@@ -2,7 +2,7 @@
 using SearchAlgorithms.SearchAlgorithms;
 #endregion
 
-namespace Algorithms.SearchExamples
+namespace Algorithms.Examples.SearchExamples
 {
     /// <summary>
     /// Примеры алгоритмов поиска
@@ -19,7 +19,7 @@ namespace Algorithms.SearchExamples
 
         public SearchExamples(uint size = 10)
         {
-            data = GetMoqData(size);
+            data = ExampleData.GetMoqData(size);
         }
 
         #endregion
@@ -65,15 +65,7 @@ namespace Algorithms.SearchExamples
         /// <param name="size"></param>
         public void GenerateNewData(uint size)
         {
-            data = GetMoqData(size);
-        }
-
-        /// <summary>
-        /// Сортировка массива с данными
-        /// </summary>
-        public void SortData()
-        {
-            Array.Sort(data);
+            data = ExampleData.GetMoqData(size);
         }
 
         #endregion
@@ -95,19 +87,7 @@ namespace Algorithms.SearchExamples
                 Console.WriteLine("Объект не найден");
             }
         }
-
-        // Создание данных для поиска
-        private static int[] GetMoqData(uint size)
-        {
-            int[] arr = new int[size];
-
-            for(int i =0; i< size; i++)
-            {
-                arr[i] = new Random().Next(0, 10000);
-            }
-
-            return arr;
-        }
+        
 
         #endregion
     }

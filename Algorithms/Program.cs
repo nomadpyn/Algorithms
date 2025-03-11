@@ -1,44 +1,11 @@
-﻿#region Usings
+﻿
+using Algorithms.Examples.SortExamples;
 using Algorithms.Services;
-using Algorithms.SearchExamples;
-#endregion
 
-var examples = new SearchExamples(100_000_000);
+Console.WriteLine("Алгоритмы и структуры данных");
 
-int searchValue = new Random().Next(0, 10000);
+SortExamples se = new SortExamples(100000);
 
-ShowSimpleSearchResult(() => examples.SimpleSearchExample(searchValue));
+CustomSW sw = new CustomSW(() => se.SimpleSortExample());
 
-ShowBarrierSearchResult(() => examples.BarrierSearchExample(searchValue));
-
-examples.SortData();
-
-ShowBinarySearchResult(() => examples.BinarySortSearchExample(searchValue));
-
-
-void ShowSimpleSearchResult(Action action)
-{
-    Console.WriteLine("Простой поиск");
-
-    var sw = new CustomSW(action);
-
-    sw.ShowResult();
-}
-
-void ShowBarrierSearchResult(Action action)
-{
-    Console.WriteLine("Барьерный поиск");
-
-    var sw = new CustomSW(action);
-
-    sw.ShowResult();
-}
-
-void ShowBinarySearchResult(Action action)
-{
-    Console.WriteLine("Барьерный поиск");
-
-    var sw = new CustomSW(action);
-
-    sw.ShowResult();
-}
+sw.ShowResult();
