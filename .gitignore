@@ -1,2 +1,7 @@
 ﻿.vs
 Algorithms/obj
+SearchAlgorithms/obj
+Algorithms/bin
+SearchAlgorithms/bin
+SearchAlgorithmsTests/obj
+SearchAlgorithmsTests/bin
