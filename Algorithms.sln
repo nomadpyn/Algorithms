@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAlgorithms", "SearchA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAlgorithmsTests", "SearchAlgorithmsTests\SearchAlgorithmsTests.csproj", "{B94D68A3-F2B7-4A04-A50A-7558F79B7215}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortAlgorithms", "SortAlgorithms\SortAlgorithms.csproj", "{A23EB680-2A16-45C6-851E-237E8A265B64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortAlgoritmsTests", "SortAlgoritmsTests\SortAlgoritmsTests.csproj", "{DF7BBF57-FA91-47B5-9920-42C1A92556D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{B94D68A3-F2B7-4A04-A50A-7558F79B7215}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B94D68A3-F2B7-4A04-A50A-7558F79B7215}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B94D68A3-F2B7-4A04-A50A-7558F79B7215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A23EB680-2A16-45C6-851E-237E8A265B64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23EB680-2A16-45C6-851E-237E8A265B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23EB680-2A16-45C6-851E-237E8A265B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23EB680-2A16-45C6-851E-237E8A265B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF7BBF57-FA91-47B5-9920-42C1A92556D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7BBF57-FA91-47B5-9920-42C1A92556D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7BBF57-FA91-47B5-9920-42C1A92556D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7BBF57-FA91-47B5-9920-42C1A92556D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
