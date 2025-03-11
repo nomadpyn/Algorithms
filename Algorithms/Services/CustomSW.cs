@@ -13,7 +13,7 @@ namespace Algorithms.Services
 
         private readonly Action action;
 
-        private readonly Stopwatch stopWatch;
+        private Stopwatch stopWatch;
 
         #endregion
 
@@ -38,7 +38,7 @@ namespace Algorithms.Services
 
             stopWatch.Stop();
 
-            Console.WriteLine($"Время выполнения {stopWatch.ElapsedMilliseconds} мс");
+            Console.WriteLine($"Время выполнения {stopWatch.Elapsed}");
         }
 
         #endregion

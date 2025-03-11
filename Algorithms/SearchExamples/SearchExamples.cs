@@ -30,7 +30,7 @@ namespace Algorithms.SearchExamples
         /// Примеры обычного поиска
         /// </summary>
         /// <param name="value"></param>
-        public void SimpleSeachExample(int value)
+        public void SimpleSearchExample(int value)
         {
             int result = UnSortSearch.SimpleSearch(data, value);
 
@@ -41,9 +41,20 @@ namespace Algorithms.SearchExamples
         /// Пример поиска с барьром
         /// </summary>
         /// <param name="value"></param>
-        public void BarrierSeachExample(int value)
+        public void BarrierSearchExample(int value)
         {
             int result = UnSortSearch.SearchBarrier(data, value);
+
+            Result(result);
+        }
+
+        /// <summary>
+        /// Пример бинарного поиска (перед поиском массив необходимо отсортировать)
+        /// </summary>
+        /// <param name="value"></param>
+        public void BinarySortSearchExample(int value)
+        {
+            int result = SortSearch.BinarySearch(data, value);
 
             Result(result);
         }
@@ -55,6 +66,14 @@ namespace Algorithms.SearchExamples
         public void GenerateNewData(uint size)
         {
             data = GetMoqData(size);
+        }
+
+        /// <summary>
+        /// Сортировка массива с данными
+        /// </summary>
+        public void SortData()
+        {
+            Array.Sort(data);
         }
 
         #endregion
