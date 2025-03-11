@@ -51,6 +51,17 @@ namespace SearchAlgorithmsTests
             return ([], inFullArr, -1);
         }
 
+        /// <summary>
+        /// Набор сортированных данныз для бинарного поиска
+        /// </summary>
+        /// <returns></returns>
+        internal static (int[] arr, int value, int index) GetCorrectSortSearchData()
+        {
+            int[] sortedArr = fullArr.Order().ToArray();
+            int newSortIndex = Array.IndexOf(sortedArr, inFullArr);
+            return (sortedArr, inFullArr, newSortIndex);
+        }
+
         #endregion
     }
 }

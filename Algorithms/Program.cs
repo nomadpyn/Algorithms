@@ -3,15 +3,17 @@ using Algorithms.Services;
 using Algorithms.SearchExamples;
 #endregion
 
-var examples = new SearchExamples(1_000_000);
+var examples = new SearchExamples(100_000_000);
 
 int searchValue = new Random().Next(0, 10000);
 
-ShowSimpleSearchResult(() => examples.SimpleSeachExample(searchValue));
+ShowSimpleSearchResult(() => examples.SimpleSearchExample(searchValue));
 
-ShowBarrierSearchResult(() => examples.BarrierSeachExample(searchValue));
+ShowBarrierSearchResult(() => examples.BarrierSearchExample(searchValue));
 
+examples.SortData();
 
+ShowBinarySearchResult(() => examples.BinarySortSearchExample(searchValue));
 
 
 void ShowSimpleSearchResult(Action action)
@@ -24,6 +26,15 @@ void ShowSimpleSearchResult(Action action)
 }
 
 void ShowBarrierSearchResult(Action action)
+{
+    Console.WriteLine("Барьерный поиск");
+
+    var sw = new CustomSW(action);
+
+    sw.ShowResult();
+}
+
+void ShowBinarySearchResult(Action action)
 {
     Console.WriteLine("Барьерный поиск");
 
