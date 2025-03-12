@@ -1,5 +1,6 @@
-﻿
+﻿#region Usings
 using SortAlgorithms.SortAlgorithms;
+#endregion
 
 namespace Algorithms.Examples.SortExamples
 {
@@ -59,6 +60,14 @@ namespace Algorithms.Examples.SortExamples
         public void ExchangeShakerSortExample()
         {
             ExchangeSort.ShakerSort(data);
+        }
+
+        /// <summary>
+        /// Пример сортировки Шелла
+        /// </summary>
+        public void ShellSortExample()
+        {
+            ShellSort.Sort(data);
         }
 
         #endregion
