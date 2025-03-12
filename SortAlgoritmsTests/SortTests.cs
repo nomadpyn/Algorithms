@@ -39,5 +39,17 @@ namespace SortAlgoritmsTests
 
             Assert.Equal(arr2, arr1);
         }
+
+        [Fact]
+        public void BubbleSortTest()
+        {
+            var arr1 = MoqData.GetIntArray();
+
+            var arr2 = MoqData.GetSortArray();
+
+            ExchangeSort.BubbleSort(arr1);
+
+            Assert.Equal(arr2, arr1);
+        }
     }
 }
