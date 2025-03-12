@@ -4,8 +4,8 @@ using Algorithms.Services;
 
 Console.WriteLine("Алгоритмы и структуры данных");
 
-SortExamples se = new SortExamples(100000);
+SortExamples se = new SortExamples(1000000);
 
-CustomSW sw = new CustomSW(() => se.ExchangeBubbleSortExample());
+CustomSW sw = new CustomSW(() => se.ShellSortExample());
 
 sw.ShowResult();
