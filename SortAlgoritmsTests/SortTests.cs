@@ -27,5 +27,17 @@ namespace SortAlgoritmsTests
 
             Assert.Equal(arr2, arr1);
         }
+
+        [Fact]
+        public void BinaryInclusionSortTest()
+        {
+            var arr1 = MoqData.GetIntArray();
+
+            var arr2 = MoqData.GetSortArray();
+
+            InclusionSort.BinaryInclusion(arr1);
+
+            Assert.Equal(arr2, arr1);
+        }
     }
 }
