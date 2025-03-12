@@ -6,6 +6,6 @@ Console.WriteLine("Алгоритмы и структуры данных");
 
 SortExamples se = new SortExamples(100000);
 
-CustomSW sw = new CustomSW(() => se.SimpleSortExample());
+CustomSW sw = new CustomSW(() => se.InclusionBinarySortExample());
 
 sw.ShowResult();

@@ -26,7 +26,17 @@ namespace Algorithms.Examples.SortExamples
             SimpleSort.Sort(data);
         }
 
+        public void InsertionSimpleSortExample()
+        {
+            InclusionSort.SimpleInsertion(data);
+        }
+
+        public void InclusionBinarySortExample()
+        {
+            InclusionSort.BinaryInclusion(data);
+        }
+
         #endregion
 
-     }
+    }
 }
