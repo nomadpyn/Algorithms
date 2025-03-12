@@ -51,5 +51,17 @@ namespace SortAlgoritmsTests
 
             Assert.Equal(arr2, arr1);
         }
+
+        [Fact]
+        public void ShakerSortTest()
+        {
+            var arr1 = MoqData.GetIntArray();
+
+            var arr2 = MoqData.GetSortArray();
+
+            ExchangeSort.ShakerSort(arr1);
+
+            Assert.Equal(arr2, arr1);
+        }
     }
 }
