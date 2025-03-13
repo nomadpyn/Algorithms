@@ -71,11 +71,19 @@ namespace Algorithms.Examples.SortExamples
         }
 
         /// <summary>
-        /// Пример быстрой сортировки
+        /// Пример быстрой сортировки (рекурсия)
         /// </summary>
         public void QuickSortExample()
         {
             QuickSort.Sort(data);
+        }
+
+        /// <summary>
+        /// Пример сортировки слиянием (рекурсия)
+        /// </summary>
+        public void MergeSortExample()
+        {
+            MergeSort.Sort(data);
         }
 
         #endregion
