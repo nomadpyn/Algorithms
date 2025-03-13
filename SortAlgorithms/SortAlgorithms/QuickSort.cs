@@ -30,12 +30,16 @@ namespace SortAlgorithms.SortAlgorithms
         /// <returns></returns>
         private static int[] Sort(int[] array, int minIndex, int maxIndex)
         {
+            // Базовый случай: если левая граница больше или равна правой, массив отсортирован или состоит из одного элемента
             if (minIndex >= maxIndex)
             {
                 return array;
             }
 
+            // Разделяем массив, выбираем опорный элемент и получаем его индекс
             var pivotIndex = Partition(array, minIndex, maxIndex);
+
+            // Рекурсивно сортируем левую и правую часть массива, исключая опорный элемент
             Sort(array, minIndex, pivotIndex - 1);
             Sort(array, pivotIndex + 1, maxIndex);
 
@@ -49,9 +53,7 @@ namespace SortAlgorithms.SortAlgorithms
         /// <param name="y"></param>
         private static void Swap(ref int x, ref int y)
         {
-            var t = x;
-            x = y;
-            y = t;
+            (y, x) = (x, y);
         }
 
         /// <summary>
@@ -63,9 +65,13 @@ namespace SortAlgorithms.SortAlgorithms
         /// <returns></returns>
         private static int Partition(int[] array, int minIndex, int maxIndex)
         {
+            // Инициализируем индекс опорного элемента
             var pivot = minIndex - 1;
+
+            // Проходим по массиву от minIndex до maxIndex (исключая maxIndex)
             for (var i = minIndex; i < maxIndex; i++)
             {
+                // Если текущий элемент меньше опорного, меняем его местами
                 if (array[i] < array[maxIndex])
                 {
                     pivot++;
@@ -73,6 +79,7 @@ namespace SortAlgorithms.SortAlgorithms
                 }
             }
 
+            // После завершения цикла перемещаем опорный элемент на его правильную позицию
             pivot++;
             Swap(ref array[pivot], ref array[maxIndex]);
             return pivot;
