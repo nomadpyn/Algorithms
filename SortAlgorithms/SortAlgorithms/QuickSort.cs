@@ -2,7 +2,7 @@
 namespace SortAlgorithms.SortAlgorithms
 {
     /// <summary>
-    /// Алгоритм быстрой сортировки (худшее - O(n*n), среднее - O(n * log 2 n)
+    /// Алгоритм быстрой сортировки (худшее - O(n*n), среднее - O(n * log n)
     /// </summary>
     public static class QuickSort
     {
