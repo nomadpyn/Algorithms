@@ -75,5 +75,17 @@ namespace SortAlgoritmsTests
 
             Assert.Equal(arr2, arr1);
         }
+
+        [Fact]
+        public void QuickSortTest()
+        {
+            var arr1 = MoqData.GetIntArray();
+
+            var arr2 = MoqData.GetSortArray();
+
+            QuickSort.Sort(arr1);
+
+            Assert.Equal(arr2, arr1);
+        }
     }
 }
