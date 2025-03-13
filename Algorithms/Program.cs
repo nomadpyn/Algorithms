@@ -1,11 +1,12 @@
-﻿
+﻿#region Usings
 using Algorithms.Examples.SortExamples;
 using Algorithms.Services;
+#endregion
 
-Console.WriteLine("Алгоритмы и структуры данных");
+Console.WriteLine("Алгоритмы");
 
-SortExamples se = new SortExamples(1000000);
+SortExamples se = new SortExamples(10000000);
 
-CustomSW sw = new CustomSW(() => se.ShellSortExample());
+CustomSW sw = new CustomSW(() => se.QuickSortExample());
 
 sw.ShowResult();

@@ -70,6 +70,14 @@ namespace Algorithms.Examples.SortExamples
             ShellSort.Sort(data);
         }
 
+        /// <summary>
+        /// Пример быстрой сортировки
+        /// </summary>
+        public void QuickSortExample()
+        {
+            QuickSort.Sort(data);
+        }
+
         #endregion
 
     }
