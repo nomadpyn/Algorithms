@@ -16,7 +16,7 @@ namespace SearchAlgorithmsTests
         {
             var moq = MoqData.GetCorrectSortSearchData();
 
-            int result = UnSortSearch.SimpleSearch(moq.arr, moq.value);
+            int result = SortSearch.BinarySearch(moq.arr, moq.value);
 
             Assert.True(result == moq.index);
         }
@@ -26,7 +26,7 @@ namespace SearchAlgorithmsTests
         {
             var moq = MoqData.GetBadSearchData();
 
-            int result = UnSortSearch.SimpleSearch(moq.arr, moq.value);
+            int result = SortSearch.BinarySearch(moq.arr, moq.value);
 
             Assert.True(result == moq.index);
         }
@@ -36,7 +36,7 @@ namespace SearchAlgorithmsTests
         {
             var moq = MoqData.GetEmptySearchData();
 
-            int result = UnSortSearch.SimpleSearch(moq.arr, moq.value);
+            int result = SortSearch.BinarySearch(moq.arr, moq.value);
 
             Assert.True(result == moq.index);
         }

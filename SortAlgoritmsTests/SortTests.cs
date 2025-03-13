@@ -1,4 +1,6 @@
+#region Usings
 using SortAlgorithms.SortAlgorithms;
+#endregion
 
 namespace SortAlgoritmsTests
 {
@@ -17,7 +19,7 @@ namespace SortAlgoritmsTests
         }
 
         [Fact]
-        public void SimpleInclusionSortTest()
+        public void SimpleInsertionSortTest()
         {
             var arr1 = MoqData.GetIntArray();
 
@@ -29,7 +31,7 @@ namespace SortAlgoritmsTests
         }
 
         [Fact]
-        public void BinaryInclusionSortTest()
+        public void BinaryInsertionSortTest()
         {
             var arr1 = MoqData.GetIntArray();
 

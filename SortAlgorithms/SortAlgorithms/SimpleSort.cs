@@ -8,16 +8,25 @@ namespace SortAlgorithms.SortAlgorithms
     {
         public static void Sort(int[] arr)
         {
+            // Временная переменная для обмена элементов
             int temp;
+
+            // Индекс минимального элемента в текущем диапазоне
             int minIndex;
 
-            for(int i =0; i < arr.Length - 1; i++)
+            // Внешний цикл для каждого элемента массива
+            for (int i =0; i < arr.Length - 1; i++)
             {
+                // Запоминаем текущий элемент
                 temp = arr[i];
+
+                // Считаем, что текущий элемент - минимальный
                 minIndex = i;
 
-                for(int j = i+1; j< arr.Length; j++)
+                // Внутренний цикл для поиска минимального элемента в оставшейся части массива
+                for (int j = i+1; j< arr.Length; j++)
                 {
+                    // Если нашли меньший элемент, обновляем минимальный элемент и его индекс
                     if (arr[j] < temp)
                     {
                         temp = arr[j];
@@ -25,6 +34,8 @@ namespace SortAlgorithms.SortAlgorithms
                     }
                 }
 
+                // Если найден минимальный элемент, который не является текущим,
+                // то меняем их местами
                 if (i != minIndex)
                 {
                     arr[minIndex] = arr[i];

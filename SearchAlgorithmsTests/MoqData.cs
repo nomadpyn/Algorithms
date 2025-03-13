@@ -1,20 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace SearchAlgorithmsTests
 {
     internal static class MoqData
     {
         #region Private Properties
 
-        private static readonly int[] fullArr = [656, 3663, 7456, 41, 778, 425, 7876, 2355, 9989, 237];
+        private static readonly int[] fullArr = [
+            656,
+            3663,
+            7456,
+            41,
+            778,
+            425,
+            7876,
+            2355,
+            9989,
+            237,
+            773,
+            893,
+            22,
+            -121,
+            -66,
+            12312,
+            66,
+            -8816,
+            65792,
+            2
+            ];
 
-        private const int inFullArr = 425;
+        private const int inFullArr = 12312;
 
-        private const int inFullArrIndex = 5;
+        private const int inFullArrIndex = 15;
 
         private const int notInFullArr = 5475;
 
@@ -28,7 +44,7 @@ namespace SearchAlgorithmsTests
         /// Набор данных для корректного поиска
         /// </summary>
         /// <returns></returns>
-        internal static (int[] arr , int value , int index) GetCorrectSearchData()
+        internal static (int[] arr, int value, int index) GetCorrectSearchData()
         {
             return (fullArr, inFullArr, inFullArrIndex);
         }
@@ -39,7 +55,7 @@ namespace SearchAlgorithmsTests
         /// <returns></returns>
         internal static (int[] arr, int value, int index) GetBadSearchData()
         {
-            return (fullArr, notInFullArr, -1);
+            return (fullArr, notInFullArr, badIndex);
         }
 
         /// <summary>
@@ -48,7 +64,7 @@ namespace SearchAlgorithmsTests
         /// <returns></returns>
         internal static (int[] arr, int value, int index) GetEmptySearchData()
         {
-            return ([], inFullArr, -1);
+            return ([], inFullArr, badIndex);
         }
 
         /// <summary>
