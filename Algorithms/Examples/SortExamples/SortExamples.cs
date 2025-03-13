@@ -35,7 +35,7 @@ namespace Algorithms.Examples.SortExamples
         /// </summary>
         public void InsertionSimpleSortExample()
         {
-            InclusionSort.SimpleInsertion(data);
+            InsertionSort.SimpleInsertion(data);
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace Algorithms.Examples.SortExamples
         /// </summary>
         public void InclusionBinarySortExample()
         {
-            InclusionSort.BinaryInclusion(data);
+            InsertionSort.BinaryInsertion(data);
         }
 
         /// <summary>
