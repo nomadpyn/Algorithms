@@ -18,7 +18,7 @@
 
     Самый простой и самый НЕ эффективный алгоритм сортировки.
 
- - [Сортировка вставками](https://github.com/nomadpyn/Algorithms/blob/master/SortAlgorithms/SortAlgorithms/InclusionSort.cs)
+ - [Сортировка вставками](https://github.com/nomadpyn/Algorithms/blob/master/SortAlgorithms/SortAlgorithms/InsertionSort.cs)
 
     Это простой алгоритм сортировки, который строит отсортированную последовательность поэтапно, вставляя каждый элемент в правильную позицию среди уже отсортированных.
 
