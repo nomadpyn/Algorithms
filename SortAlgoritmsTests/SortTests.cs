@@ -23,7 +23,7 @@ namespace SortAlgoritmsTests
 
             var arr2 = MoqData.GetSortArray();
 
-            InclusionSort.SimpleInsertion(arr1);
+            InsertionSort.SimpleInsertion(arr1);
 
             Assert.Equal(arr2, arr1);
         }
@@ -35,7 +35,7 @@ namespace SortAlgoritmsTests
 
             var arr2 = MoqData.GetSortArray();
 
-            InclusionSort.BinaryInclusion(arr1);
+            InsertionSort.BinaryInsertion(arr1);
 
             Assert.Equal(arr2, arr1);
         }

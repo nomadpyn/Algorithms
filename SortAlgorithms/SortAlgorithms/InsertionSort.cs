@@ -4,7 +4,7 @@ namespace SortAlgorithms.SortAlgorithms
     /// <summary>
     /// Алгоритмы сортировки включениями - O(N*N)
     /// </summary>
-    public static class InclusionSort
+    public static class InsertionSort
     {
         /// <summary>
         /// Сортировка простым включением 
@@ -21,7 +21,8 @@ namespace SortAlgorithms.SortAlgorithms
 
                 while (j >= 0 && arr[j] > temp)
                 {
-                    arr[j + 1] = arr[j--];
+                    arr[j + 1] = arr[j];
+                    j--;
                 }
 
                 arr[j + 1] = temp;
@@ -32,7 +33,7 @@ namespace SortAlgorithms.SortAlgorithms
         /// Сортировка бинарным включением
         /// </summary>
         /// <param name="arr"></param>
-        public static void BinaryInclusion(int[] arr)
+        public static void BinaryInsertion(int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
             {
