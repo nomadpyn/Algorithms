@@ -17,7 +17,7 @@ namespace Algorithms.Examples.SearchExamples
 
         #region Constructors
 
-        public SearchExamples(uint size = 10)
+        public SearchExamples(uint size)
         {
             data = ExampleData.GetMoqData(size);
         }
@@ -76,7 +76,7 @@ namespace Algorithms.Examples.SearchExamples
         /// Отображение результата
         /// </summary>
         /// <param name="index"></param>
-        private void Result(int index)
+        private static void Result(int index)
         {
             if (index != -1)
             {

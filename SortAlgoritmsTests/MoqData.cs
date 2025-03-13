@@ -6,7 +6,27 @@ namespace SortAlgoritmsTests
     {
         #region Private Properties
 
-        private static readonly int[] Arr = [524, 661, 62, 9, 13, 0, -13, 224, 91, 23];
+        private static readonly int[] Arr = [
+            524, 
+            661, 
+            62, 
+            9, 
+            13, 
+            0, 
+            -13, 
+            224, 
+            91, 
+            23,
+            -458,
+            93444,
+            98,
+            -4567,
+            -55,
+            8417,
+            56,
+            -3,
+            4
+            ];
 
         #endregion
 

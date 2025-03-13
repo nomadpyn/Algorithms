@@ -6,7 +6,11 @@ namespace Algorithms.Examples
     /// </summary>
     public static class ExampleData
     {
-        // Создание данных для поиска
+        /// <summary>
+        ///  Создание данных для поиска
+        /// </summary>
+        /// <param name="size"></param>
+        /// <returns></returns>
         public static int[] GetMoqData(uint size)
         {
             int[] arr = new int[size];
