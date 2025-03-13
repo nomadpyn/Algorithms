@@ -50,7 +50,7 @@ namespace SearchAlgorithmsTests
         {
             var moq = MoqData.GetCorrectSearchData();
 
-            int result = UnSortSearch.SimpleSearch(moq.arr, moq.value);
+            int result = UnSortSearch.SearchBarrier(moq.arr, moq.value);
 
             Assert.True(result == moq.index);
         }
@@ -60,7 +60,7 @@ namespace SearchAlgorithmsTests
         {
             var moq = MoqData.GetBadSearchData();
 
-            int result = UnSortSearch.SimpleSearch(moq.arr, moq.value);
+            int result = UnSortSearch.SearchBarrier(moq.arr, moq.value);
 
             Assert.True(result == moq.index);
         }
@@ -70,7 +70,7 @@ namespace SearchAlgorithmsTests
         {
             var moq = MoqData.GetEmptySearchData();
 
-            int result = UnSortSearch.SimpleSearch(moq.arr, moq.value);
+            int result = UnSortSearch.SearchBarrier(moq.arr, moq.value);
 
             Assert.True(result == moq.index);
         }
