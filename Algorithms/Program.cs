@@ -7,6 +7,6 @@ Console.WriteLine("Алгоритмы");
 
 SortExamples se = new SortExamples(10000000);
 
-CustomSW sw = new CustomSW(() => se.QuickSortExample());
+CustomSW sw = new CustomSW(() => se.MergeSortExample());
 
 sw.ShowResult();
